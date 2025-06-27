@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,515;1,515&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left {
+    width: 25vw;
+    height: 100vh;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.border-red {
+    border: 1px solid red;
+    margin: 8px;
+}
+
+.right {
+    width: 75vw;
+    height: 100vh;
+}
+
+.home ul li {
+    width: 34px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    /* transition: background 0.3s; */
+}
+
+.home ul li:hover {
+    background-color: #2e2f46;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.logo {
+    width: 34px;
+    margin-bottom: 15px;
+}
+
+.home ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Adds vertical spacing between li items */
+}
+
+.box1 {
+    /* border: 1px solid yellow; */
+    padding: 16px;
+}
+
+.box2 {
+    padding: 16px;
+    height: 80vh;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.lib .songlib li {
+    list-style: none;
+
+}
+
+.buttons button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease;
+    font-weight: normal;
+    width: 96px;
+}
+
+.buttons button:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+
+}
+
+.buttons button:hover {
+    font-weight: bold;
+    width: 96px;
+    cursor: pointer;
+    padding: 10px 21px;
+
+}
+
+.arrows {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    background-color: #201431;
+    top: 0;
+    z-index: 10;
+}
+
+.main {
+    flex: 1;
+    background: linear-gradient(#280f48, #0c0516);
+    color: white;
+    padding: 20px;
+    padding-bottom: 70px; 
+}
+
+/* Applies to all scrollable elements */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track (the background) */
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #7f3aa1;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e5fb1;
+}
+
+.main h1 {
+    letter-spacing: 1px;
+}
+
+.playlist-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.playlist-container .card {
+    position: relative;
+    font-size: smaller;
+    background-color: #321f52;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+
+.playlist-container .card h2 {
+    padding: 3px 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img-fit {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+
+
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .play {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    cursor: pointer;
+
+}
+
+.image-container:hover .img-fit {
+    opacity: 0.3;
+}
+.playbar {
+    position: sticky;
+    bottom: 0;
+    background-color: #201431;
+    color: white;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    border-top: 1px solid #333;
+}
+
+.lib .songlist {
+    /* padding: 5px; */
+    margin-top: 20px;
+}
+
+
+
+.songlist ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    background-color:#321f52;
+    border-radius: 5px;
+    padding: 5px;
+}
+

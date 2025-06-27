@@ -1,0 +1,38 @@
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.center-items{
+    align-items: center;
+}
+.rounded{
+    border-radius: 10px;
+}
+.bg-1{
+    background-color:#201431;
+}
+.bg-2{
+    background-color: #280f48
+    
+}
+.bg-3{
+    background-color: #5416b5 ;
+}
+.bg-4{
+    background-color: #7f3aa1;
+}
+.border-yellow{
+    border: 1px solid yellow;
+}
+.self-end{
+align-self:flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+    width: 100%;
+}
+.list-none{
+    list-style: none;
+}
